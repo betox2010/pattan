@@ -1,5 +1,83 @@
+body {
+	background-color: #000000;
+}
+
 .secciones {
 	font-family: 'Exo', sans-serif;
-	font-size: 45px;
+	font-size: 70px;
+	text-align: right;
 	float: left;
-	
+	margin: 20% 0% 0% 0%;
+} 
+
+nav ul li {
+	list-style: none;
+	text-decoration: none;
+	color: black;
+    display:block;
+    padding:5px;
+    margin-right: 3%;
+}
+
+a:link, a:visited { 
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+a:hover, a:active { 
+	font-family: 'Exo 2', sans-serif;
+	color: purple;
+	text-decoration: none;
+}
+
+
+/*// Diagrama de 12 columnas //*/
+[class*="col-"] {
+    float: left;
+    display: block;
+    }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
