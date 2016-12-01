@@ -1,5 +1,8 @@
 body {
 	background-color: #000000;
+	display: block;
+	border-color: #FCFF00;
+	border-width: 20px;
 }
 
 .secciones {
@@ -10,6 +13,7 @@ body {
 	margin: 20% 0% 0% 0%;
 } 
 
+/*ESTILO DE LISTA DE MENÚ*/
 nav ul li {
 	list-style: none;
 	text-decoration: none;
@@ -19,6 +23,7 @@ nav ul li {
     margin-right: 3%;
 }
 
+/*ESTADOS DE LINKS*/
 a:link, a:visited { 
 	color:#FFFFFF;
 	text-decoration: none;
@@ -26,8 +31,9 @@ a:link, a:visited {
 
 a:hover, a:active { 
 	font-family: 'Exo 2', sans-serif;
-	color: purple;
+	color: #FFFFFF;
 	text-decoration: none;
+	text-shadow: #66E4FF 8px 8px, #F433E4 -8px -8px;
 }
 
 
@@ -50,7 +56,7 @@ a:hover, a:active {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-
+/*ESTILO DE VIDEO YOUTUBE*/
 * { box-sizing: border-box; }
 .video-background {
   background: #000;
@@ -58,6 +64,7 @@ a:hover, a:active {
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
 }
+
 .video-foreground,
 .video-background iframe {
   position: absolute;
@@ -73,11 +80,4 @@ a:hover, a:active {
 }
 @media (max-aspect-ratio: 16/9) {
   .video-foreground { width: 300%; left: -100%; }
-}
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
 }
