@@ -5,21 +5,12 @@ body {
 .secciones {
 	font-family: 'Exo', sans-serif;
 	font-size: 70px;
-	text-align: right;
-	float: left;
-	margin: 20% 0% 0% 0%;
-} 
-
-/*ESTILO DE LISTA DE MENÚ*/
-nav ul li {
-	list-style: none;
-	text-decoration: none;
-	color: black;
-    display:block;
-    padding:5px;
-    margin-right: 3%;
+	float: right;
+	padding: 40px 0px 40px 0px;
+  margin: 10px 10px;
 }
 
+li 
 /*ESTADOS DE LINKS*/
 a:link, a:visited { 
 	color:#FFFFFF;
@@ -29,29 +20,9 @@ a:link, a:visited {
 a:hover, a:active { 
 	font-family: 'Exo 2', sans-serif;
 	color: #FFFFFF;
-	text-decoration: none;
 	text-shadow: #66E4FF 8px 8px, #F433E4 -8px -8px;
 }
 
-
-/*// Diagrama de 12 columnas //*/
-[class*="col-"] {
-    float: left;
-    display: block;
-    }
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
 /*ESTILO DE VIDEO YOUTUBE*/
 * { box-sizing: border-box; }
